@@ -1,0 +1,1 @@
+pyuic5 -o Map.py mainwindow.ui
