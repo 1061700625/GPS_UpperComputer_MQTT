@@ -16,8 +16,8 @@ import time
 
 MQTTHOST = "139.199.208.33"
 MQTTPORT = 1883
-USERNAME = "cehang"
-PASSWORD = "cehang001"
+USERNAME = ""
+PASSWORD = ""
 TOPIC = r'/CC3200@SHIP/2/SHIPDATA/SENSORDATA'
 CLIENTID = "SXF_Python_GPSMap"
 HEARTBEAT = 60
@@ -222,7 +222,7 @@ class MyMainWindow(Map.Ui_MainWindow):
     def gps2baidu(self, longitude, latitude):
         try:
             url_base = r'http://api.map.baidu.com/geoconv/v1/?from=1'
-            ak = '9uT4V8vHWtT0AvPNQ4zvV2FDIzGjad6k'
+            ak = ''
             coords = str(longitude) + ',' + str(latitude)
             url = "%s&ak=%s&coords=%s" % (url_base, ak, coords)
             html_json = requests.get(url).json()
@@ -240,7 +240,7 @@ class MyMainWindow(Map.Ui_MainWindow):
         url_base = r'http://api.map.baidu.com/staticimage/v2?'
         center = str(longitude) + ',' + str(latitude)
         markers = str(longitude) + ',' + str(latitude)
-        ak = '9uT4V8vHWtT0AvPNQ4zvV2FDIzGjad6k'
+        ak = ''
         height = 600
         width = 600
         url = "%s&zoom=19&ak=%s&center=%s&markers=%s&height=%s&width=%s" % (
