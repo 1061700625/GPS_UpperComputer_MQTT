@@ -4,8 +4,8 @@
 PC上位机，可配置mqtt连接信息、解析GPS数据，并调用百度地图API显示。  
 界面用Qt12绘制，exe由pyinstaller生成。  
 
-
-
+exe文件较大，可访问链接获取: https://pan.baidu.com/s/1EU8LWXp1MicvyDC5bGWeAw 提取码: jepv   
+若嫌网盘下载太慢，可自行搜索pandownload，可快速下载网盘文件。  
 
 
 
